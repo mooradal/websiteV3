@@ -9,9 +9,17 @@ $shadowHover:0px 5px 30px #333333;
     to {opacity:1;}
 }
 
-// body {
-//     background-color: black;
-// }
+.fade {
+    
+}
+
+.background {
+    position: absolute;
+    background:black;
+    height:100%;
+    width:100%;
+    z-index:-2;
+}
 
 body, html{
     font-family: $font;
@@ -24,7 +32,6 @@ body, html{
         font-size:4em;
         margin:0;
         opacity:0;
-        animation:fadeIn 2s ease-in 1.3s forwards ;
     }
 
     p {
@@ -47,15 +54,16 @@ section {
     background: linear-gradient(45deg,#0988ff,#096bff);
     z-index: -1;
     opacity:0;
-    animation:fadeIn 2s ease-in 0.5s forwards ;
+    animation:fadeIn 1.5s ease-out 0.2s forwards ;
 }
 
 .title {
-        text-align: center;
-        font-size:4em;
-        padding:0;
-        margin:0;
-        color:white;
+    text-align: center;
+    font-size:4em;
+    padding:0;
+    margin:0;
+    color:white;
+    animation:fadeIn 1.5s ease-out 0.2s forwards ;
 }
 
 .center-container {
@@ -70,6 +78,8 @@ section {
 
 .subtitle {
     color:white;
+    opacity:0;
+    animation:fadeIn 1.5s ease-out 0.2s forwards ;
 }
 
 .nav-button {
@@ -119,13 +129,10 @@ button:hover {
 
 .button-group {
     text-align: center;
+    opacity: 0;
+    animation:fadeIn 1.5s ease-out 0.2s forwards ;
 }
 
 h1 {
-    font-weight: 100;
-}
-
-h2 {
-    position: absolute;
     font-weight: 100;
 }

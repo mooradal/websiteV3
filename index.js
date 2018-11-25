@@ -7,20 +7,25 @@ var icons = document.querySelectorAll('.project-icon');
 
 cards[0].addEventListener('click',() => {
 	icons[0].style.animation = 'slideRight 1s ease-out 0s forwards';
+	icons[0].childNodes.querySelector('h2').style.display = 'none';
 });
 
 cards[1].addEventListener('click',() => {
 	icons[1].style.animation = 'slideRight 1s ease-out 0s forwards';
+	icons[0].childNodes.querySelector('h2').style.display = 'none';
 });
 
 cards[2].addEventListener('click',() => {
 	icons[2].style.animation = 'slideRight 1s ease-out 0s forwards';
+	icons[0].childNodes.querySelector('h2').style.display = 'none';
 });
 
 cards[3].addEventListener('click',() => {
 	icons[3].style.animation = 'slideRight 1s ease-out 0s forwards';
+	icons[0].childNodes.querySelector('h2').style.display = 'none';
 });
 
 cards[4].addEventListener('click',() => {
 	icons[4].style.animation = 'slideRight 1s ease-out 0s forwards';
+	icons[0].childNodes.querySelector('h1').style.display = 'none';
 });
