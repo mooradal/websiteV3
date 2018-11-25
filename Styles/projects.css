@@ -1,0 +1,68 @@
+@-webkit-keyframes slideRight {
+  from {
+    -webkit-transform: translate(12.5em, 0%);
+            transform: translate(12.5em, 0%);
+  }
+  to {
+    -webkit-transform: translate(0.5em, 0%);
+            transform: translate(0.5em, 0%);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    -webkit-transform: translate(12.5em, 0%);
+            transform: translate(12.5em, 0%);
+  }
+  to {
+    -webkit-transform: translate(0.5em, 0%);
+            transform: translate(0.5em, 0%);
+  }
+}
+
+#particles-js {
+  background: linear-gradient(45deg, #ffc609, #ff6309);
+}
+
+.card-items {
+  display: inline-block;
+  width: 30em;
+  height: 100%;
+  -webkit-box-shadow: 0px 5px 10px #555555;
+          box-shadow: 0px 5px 10px #555555;
+  border-radius: 4px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin: 0.5em;
+}
+
+.card-items:hover {
+  -webkit-box-shadow: 0px 5px 30px #333333;
+          box-shadow: 0px 5px 30px #333333;
+}
+
+.project-icon {
+  -webkit-transform: translate(12.5em, 0%);
+          transform: translate(12.5em, 0%);
+  width: 5em;
+  margin: 0.5em auto;
+  top: 0;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.card-items:nth-of-type(1) {
+  background: #6251ff;
+}
+
+.card-items:nth-of-type(2) {
+  background: linear-gradient(130deg, #151f27, #201e30);
+}
+
+.card-items:nth-of-type(3) {
+  background: #ff0543;
+}
+
+.card-items:nth-of-type(4) {
+  background: linear-gradient(45deg, #ff1e60, #ff7316);
+}
