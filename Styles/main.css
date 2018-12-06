@@ -1,3 +1,27 @@
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -16,6 +40,24 @@
   }
 }
 
+.bg {
+  margin-top: 100%;
+  background: url("/images/bg.png");
+  background-position: center;
+  background-size: cover;
+  height: 60%;
+}
+
+.bg button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  height: 20em;
+}
+
 .background {
   position: absolute;
   background: black;
@@ -32,14 +74,11 @@ body, html {
 }
 
 body h1, html h1 {
-  text-align: center;
   font-size: 4em;
   margin: 0;
-  opacity: 0;
 }
 
 body p, html p {
-  text-align: center;
   margin: 0px 0px 2em 0;
   font-size: 1.3em;
 }
@@ -69,6 +108,7 @@ section {
   color: white;
   -webkit-animation: fadeIn 1.5s ease-out 0.2s forwards;
           animation: fadeIn 1.5s ease-out 0.2s forwards;
+  opacity: 0;
 }
 
 .center-container {
@@ -82,6 +122,7 @@ section {
 }
 
 .subtitle {
+  text-align: center;
   color: white;
   opacity: 0;
   -webkit-animation: fadeIn 1.5s ease-out 0.2s forwards;
@@ -148,4 +189,46 @@ button:hover {
 
 h1 {
   font-weight: 100;
+}
+
+.main-title {
+  margin-left: 10%;
+  color: black;
+}
+
+.center {
+  padding: 20% 0%;
+  text-align: center;
+}
+
+.wide {
+  padding: 0.8em 30%;
+  -webkit-box-shadow: 0px 5px 10px #555555;
+          box-shadow: 0px 5px 10px #555555;
+  background: linear-gradient(124deg, #f83b74, #ffc400, #17ec70, #0ab7ec, #f300be);
+  background-size: 1000% 1000%;
+  color: white;
+  -webkit-animation: rainbow 12s ease-in-out infinite alternate;
+          animation: rainbow 12s ease-in-out infinite alternate;
+}
+
+.wide:hover {
+  -webkit-box-shadow: 0px 5px 30px #333333;
+          box-shadow: 0px 5px 30px #333333;
+}
+
+p {
+  margin-right: 10% !important;
+  margin-left: 10% !important;
+}
+
+.prog-lang {
+  text-decoration: none;
+  list-style: none;
+  margin-left: 10%;
+  font-size: 1.5em;
+}
+
+ul {
+  padding: 0;
 }
