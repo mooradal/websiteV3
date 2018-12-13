@@ -106,7 +106,7 @@ section {
     user-select:none;
     float:right;
     text-decoration: none;
-    display: inline-block;
+    list-style-type: none;
     padding:0.9em 0.9em 0em 0.9em;
     height:35px;
     color:white;
@@ -124,6 +124,7 @@ section {
     padding: 0;
     z-index:10;
     background: rgba(0,0,0,0.3);
+    border-bottom:1px solid #FFFFFF;
 }
 
 .mainCol {
@@ -162,24 +163,6 @@ h1 {
     color:black;
 }
 
-.center {
-    padding:20% 0%;
-    text-align: center;
-}
-
-.wide {
-    padding:0.8em 30%;
-    box-shadow: $shadow;
-    background: linear-gradient(124deg,#f83b74, #ffc400, #17ec70, #0ab7ec, #f300be);
-    background-size: 1000% 1000%;
-    color:white;
-    animation: rainbow 12s ease-in-out infinite alternate;
-}
-
-.wide:hover {
-    box-shadow: $shadowHover;
-}
-
   
 p {
     margin-right:10% !important;
@@ -196,3 +179,47 @@ p {
 ul {
     padding:0;
 }
+
+.footer {
+    letter-spacing: 0.15em;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    opacity:0;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 0.2em;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 50%; 
+    margin-left: -60px; 
+    transition: 0.4s;
+  }
+
+  .tooltip:hover .tooltiptext {
+    opacity: 1;
+  }
+  .tooltip:hover {
+    cursor: pointer;
+  }
+  
+
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.6) transparent transparent transparent;
+  }

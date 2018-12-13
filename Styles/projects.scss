@@ -48,8 +48,18 @@ $shadowHover:0px 5px 30px #333333;
 
 .card-items:nth-of-type(4) {background: linear-gradient(45deg,#ff1e60,#ff7316)}   
 
+.card-items:nth-of-type(6) {background:#121212;}
 
 h2 {
     text-align: center;
     font-weight: 100;
+}
+
+.coming-soon {
+    color:rgb(177, 177, 177);
+    font-weight:100;
+    text-align: center;
+    margin:0px;
+    margin-bottom:8px;
+    font-size:100%;
 }
