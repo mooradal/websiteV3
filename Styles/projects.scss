@@ -9,9 +9,6 @@ $shadowHover:0px 5px 30px #333333;
     to {transform:translate(0.5em,0%);}
 }
 
-#particles-js {
-    background: linear-gradient(45deg, #ffc609, #ff6309);
-}
 
 .card-items {
     position: relative;;
@@ -26,6 +23,11 @@ $shadowHover:0px 5px 30px #333333;
 
 .card-items:hover {
     box-shadow: $shadowHover;
+}
+
+.projects {
+    width:80%;
+    margin:0 auto;
 }
 
 .project-icon {

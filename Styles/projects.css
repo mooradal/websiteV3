@@ -20,10 +20,6 @@
   }
 }
 
-#particles-js {
-  background: linear-gradient(45deg, #ffc609, #ff6309);
-}
-
 .card-items {
   position: relative;
   display: inline-block;
@@ -40,6 +36,11 @@
 .card-items:hover {
   -webkit-box-shadow: 0px 5px 30px #333333;
           box-shadow: 0px 5px 30px #333333;
+}
+
+.projects {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .project-icon {
